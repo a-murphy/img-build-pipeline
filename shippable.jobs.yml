@@ -1,0 +1,14 @@
+jobs:
+  - name: build-u14
+    type: runSh
+    steps:
+      - IN: u14-repo
+      - IN: docker-creds
+      - TASK:
+        - script: sudo apt-get install -y jq
+        - script: ./IN/u14-repo/gitRepo/build.sh
+      - OUT: u14-img
+    on_success:
+      - echo 'on success !!!!!'
+    on_failure:
+      - echo 'Failed job .... :('
