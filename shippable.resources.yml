@@ -1,0 +1,19 @@
+resources:
+  - name: docker-creds
+    type: integration
+    integration: avinci-dh
+
+  - name: u14-repo
+    type: gitRepo
+    integration: avinci-gh
+    pointer:
+      sourceName: dry-dock/u14
+      branch: master
+
+  - name: u14-img
+    type: image
+    integration: avinci-gh
+    pointer:
+      sourceName: "drydock/u14"
+    seed:
+      versionName: tip
