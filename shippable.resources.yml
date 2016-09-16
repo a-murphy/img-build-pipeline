@@ -12,8 +12,23 @@ resources:
 
   - name: u14-img
     type: image
-    integration: avinci-gh
+    integration: avinci-dh
     pointer:
       sourceName: "drydock/u14"
+    seed:
+      versionName: tip
+
+  - name: u14all-repo
+    type: gitRepo
+    integration: avinci-gh
+    pointer:
+      sourceName: dry-dock/u14all
+      branch: master
+
+  - name: u14all-img
+    type: image
+    integration: avinci-dh
+    pointer:
+      sourceName: "drydock/u14all"
     seed:
       versionName: tip
