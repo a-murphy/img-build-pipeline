@@ -72,3 +72,18 @@ jobs:
       - echo 'on success !!!!!'
     on_failure:
       - echo 'Failed job .... :('
+
+  - name: build-u14pyt
+    type: runSh
+    steps:
+      - IN: u14-img
+      - IN: u14pyt-repo
+      - IN: docker-creds
+      - TASK:
+        - script: sudo apt-get install -y jq
+        - script: ./IN/u14pyt-repo/gitRepo/build.sh
+      - OUT: u14pyt-img
+    on_success:
+      - echo 'on success !!!!!'
+    on_failure:
+      - echo 'Failed job .... :('

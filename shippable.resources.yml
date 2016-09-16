@@ -77,3 +77,18 @@ resources:
       sourceName: "drydock/u14nod"
     seed:
       versionName: tip
+
+  - name: u14pyt-repo
+    type: gitRepo
+    integration: avinci-gh
+    pointer:
+      sourceName: dry-dock/u14pyt
+      branch: master
+
+  - name: u14pyt-img
+    type: image
+    integration: avinci-dh
+    pointer:
+      sourceName: "drydock/u14pyt"
+    seed:
+      versionName: tip
