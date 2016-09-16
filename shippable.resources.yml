@@ -197,3 +197,18 @@ resources:
       sourceName: "drydock/u14pytall"
     seed:
       versionName: tip
+
+  - name: u14cloall-repo
+    type: gitRepo
+    integration: avinci-gh
+    pointer:
+      sourceName: dry-dock/u14cloall
+      branch: master
+
+  - name: u14cloall-img
+    type: image
+    integration: avinci-dh
+    pointer:
+      sourceName: "drydock/u14cloall"
+    seed:
+      versionName: tip
