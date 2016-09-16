@@ -102,3 +102,18 @@ jobs:
       - echo 'on success !!!!!'
     on_failure:
       - echo 'Failed job .... :('
+
+  - name: build-u14clo
+    type: runSh
+    steps:
+      - IN: u14-img
+      - IN: u14clo-repo
+      - IN: docker-creds
+      - TASK:
+        - script: sudo apt-get install -y jq
+        - script: ./IN/u14clo-repo/gitRepo/build.sh
+      - OUT: u14clo-img
+    on_success:
+      - echo 'on success !!!!!'
+    on_failure:
+      - echo 'Failed job .... :('
