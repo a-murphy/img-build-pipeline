@@ -222,3 +222,18 @@ jobs:
       - echo 'on success !!!!!'
     on_failure:
       - echo 'Failed job .... :('
+
+  - name: build-u14javall
+    type: runSh
+    steps:
+      - IN: u14all-img
+      - IN: u14javall-repo
+      - IN: docker-creds
+      - TASK:
+        - script: sudo apt-get install -y jq
+        - script: ./IN/u14javall-repo/gitRepo/build.sh
+      - OUT: u14javall-img
+    on_success:
+      - echo 'on success !!!!!'
+    on_failure:
+      - echo 'Failed job .... :('
