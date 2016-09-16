@@ -272,3 +272,18 @@ resources:
       sourceName: "drydock/u14ruball"
     seed:
       versionName: tip
+
+  - name: u14phpall-repo
+    type: gitRepo
+    integration: avinci-gh
+    pointer:
+      sourceName: dry-dock/u14phpall
+      branch: master
+
+  - name: u14phpall-img
+    type: image
+    integration: avinci-dh
+    pointer:
+      sourceName: "drydock/u14phpall"
+    seed:
+      versionName: tip
