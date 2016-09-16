@@ -167,3 +167,18 @@ resources:
       sourceName: "drydock/u14php"
     seed:
       versionName: tip
+
+  - name: u14nodall-repo
+    type: gitRepo
+    integration: avinci-gh
+    pointer:
+      sourceName: dry-dock/u14nodall
+      branch: master
+
+  - name: u14nodall-img
+    type: image
+    integration: avinci-dh
+    pointer:
+      sourceName: "drydock/u14nodall"
+    seed:
+      versionName: tip
