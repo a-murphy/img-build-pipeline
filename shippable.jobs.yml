@@ -147,3 +147,18 @@ jobs:
       - echo 'on success !!!!!'
     on_failure:
       - echo 'Failed job .... :('
+
+  - name: build-u14php
+    type: runSh
+    steps:
+      - IN: u14-img
+      - IN: u14php-repo
+      - IN: docker-creds
+      - TASK:
+        - script: sudo apt-get install -y jq
+        - script: ./IN/u14php-repo/gitRepo/build.sh
+      - OUT: u14php-img
+    on_success:
+      - echo 'on success !!!!!'
+    on_failure:
+      - echo 'Failed job .... :('
