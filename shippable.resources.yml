@@ -62,3 +62,18 @@ resources:
       sourceName: "drydock/u14jav"
     seed:
       versionName: tip
+
+  - name: u14nod-repo
+    type: gitRepo
+    integration: avinci-gh
+    pointer:
+      sourceName: dry-dock/u14nod
+      branch: master
+
+  - name: u14nod-img
+    type: image
+    integration: avinci-dh
+    pointer:
+      sourceName: "drydock/u14nod"
+    seed:
+      versionName: tip
