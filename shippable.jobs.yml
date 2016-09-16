@@ -117,3 +117,18 @@ jobs:
       - echo 'on success !!!!!'
     on_failure:
       - echo 'Failed job .... :('
+
+  - name: build-u14gol
+    type: runSh
+    steps:
+      - IN: u14-img
+      - IN: u14gol-repo
+      - IN: docker-creds
+      - TASK:
+        - script: sudo apt-get install -y jq
+        - script: ./IN/u14gol-repo/gitRepo/build.sh
+      - OUT: u14gol-img
+    on_success:
+      - echo 'on success !!!!!'
+    on_failure:
+      - echo 'Failed job .... :('
