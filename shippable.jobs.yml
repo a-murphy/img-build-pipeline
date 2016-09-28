@@ -7,7 +7,6 @@ jobs:
       - TASK:
         - script: sudo apt-get install -y jq
         - script: ./IN/u14-repo/gitRepo/build.sh
-        - script: ./IN/u14-repo/gitRepo/test/test_lang.sh
       - OUT: u14-img
     on_success:
       - echo 'on success !!!!!'
