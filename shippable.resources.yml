@@ -9,6 +9,7 @@ resources:
     pointer:
       sourceName: dry-dock/u14
       branch: master
+      buildOnRelease: true
 
   - name: u14-img
     type: image
@@ -24,6 +25,7 @@ resources:
     pointer:
       sourceName: dry-dock/u14all
       branch: master
+      buildOnRelease: true
 
   - name: u14all-img
     type: image
@@ -39,6 +41,7 @@ resources:
     pointer:
       sourceName: dry-dock/u14nodall
       branch: master
+      buildOnRelease: true
 
   - name: u14nodall-img
     type: image
@@ -54,6 +57,7 @@ resources:
     pointer:
       sourceName: dry-dock/u14pytall
       branch: master
+      buildOnRelease: true
 
   - name: u14pytall-img
     type: image
@@ -69,6 +73,7 @@ resources:
     pointer:
       sourceName: dry-dock/u14cloall
       branch: master
+      buildOnRelease: true
 
   - name: u14cloall-img
     type: image
@@ -84,6 +89,7 @@ resources:
     pointer:
       sourceName: dry-dock/u14golall
       branch: master
+      buildOnRelease: true
 
   - name: u14golall-img
     type: image
@@ -99,6 +105,7 @@ resources:
     pointer:
       sourceName: dry-dock/u14javall
       branch: master
+      buildOnRelease: true
 
   - name: u14javall-img
     type: image
@@ -114,6 +121,7 @@ resources:
     pointer:
       sourceName: dry-dock/u14scaall
       branch: master
+      buildOnRelease: true
 
   - name: u14scaall-img
     type: image
@@ -129,6 +137,7 @@ resources:
     pointer:
       sourceName: dry-dock/u14ruball
       branch: master
+      buildOnRelease: true
 
   - name: u14ruball-img
     type: image
@@ -144,6 +153,7 @@ resources:
     pointer:
       sourceName: dry-dock/u14phpall
       branch: master
+      buildOnRelease: true
 
   - name: u14phpall-img
     type: image
