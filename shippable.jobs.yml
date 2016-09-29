@@ -147,3 +147,18 @@ jobs:
       - echo 'on success !!!!!'
     on_failure:
       - echo 'Failed job .... :('
+
+  - name: build-u14cppall
+    type: runSh
+    steps:
+      - IN: u14all-img
+      - IN: u14cppall-repo
+      - IN: docker-creds
+      - TASK:
+        - script: sudo apt-get install -y jq
+        - script: ./IN/u14cppall-repo/gitRepo/build.sh
+      - OUT: u14cppall-img
+    on_success:
+      - echo 'on success !!!!!'
+    on_failure:
+      - echo 'Failed job .... :('
