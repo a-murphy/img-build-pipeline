@@ -177,3 +177,35 @@ resources:
       sourceName: "drydock/u14cppall"
     seed:
       versionName: tip
+
+  - name: u16-repo
+    type: gitRepo
+    integration: avinci-gh
+    pointer:
+      sourceName: dry-dock/u16
+      branch: master
+      buildOnTagPush: true
+
+  - name: u16-img
+    type: image
+    integration: avinci-dh
+    pointer:
+      sourceName: "drydock/u16"
+    seed:
+      versionName: tip
+
+  - name: u16all-repo
+    type: gitRepo
+    integration: avinci-gh
+    pointer:
+      sourceName: dry-dock/u16all
+      branch: master
+      buildOnTagPush: true
+
+  - name: u16all-img
+    type: image
+    integration: avinci-dh
+    pointer:
+      sourceName: "drydock/u16all"
+    seed:
+      versionName: tip
