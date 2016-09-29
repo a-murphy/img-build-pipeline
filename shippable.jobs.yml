@@ -162,3 +162,32 @@ jobs:
       - echo 'on success !!!!!'
     on_failure:
       - echo 'Failed job .... :('
+
+  - name: build-u16
+    type: runSh
+    steps:
+      - IN: u16-repo
+      - IN: docker-creds
+      - TASK:
+        - script: sudo apt-get install -y jq
+        - script: ./IN/u16-repo/gitRepo/build.sh
+      - OUT: u16-img
+    on_success:
+      - echo 'on success !!!!!'
+    on_failure:
+      - echo 'Failed job .... :('
+
+  - name: build-u16all
+    type: runSh
+    steps:
+      - IN: u16-img
+      - IN: u16all-repo
+      - IN: docker-creds
+      - TASK:
+        - script: sudo apt-get install -y jq
+        - script: ./IN/u16all-repo/gitRepo/build.sh
+      - OUT: u16all-img
+    on_success:
+      - echo 'on success !!!!!'
+    on_failure:
+      - echo 'Failed job .... :('
