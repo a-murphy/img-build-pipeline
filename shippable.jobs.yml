@@ -191,3 +191,138 @@ jobs:
       - echo 'on success !!!!!'
     on_failure:
       - echo 'Failed job .... :('
+
+  - name: build-u16nodall
+    type: runSh
+    steps:
+      - IN: u16all-img
+      - IN: u16nodall-repo
+      - IN: docker-creds
+      - TASK:
+        - script: sudo apt-get install -y jq
+        - script: ./IN/u16nodall-repo/gitRepo/build.sh
+      - OUT: u16nodall-img
+    on_success:
+      - echo 'on success !!!!!'
+    on_failure:
+      - echo 'Failed job .... :('
+
+  - name: build-u16pytall
+    type: runSh
+    steps:
+      - IN: u16all-img
+      - IN: u16pytall-repo
+      - IN: docker-creds
+      - TASK:
+        - script: sudo apt-get install -y jq
+        - script: ./IN/u16pytall-repo/gitRepo/build.sh
+      - OUT: u16pytall-img
+    on_success:
+      - echo 'on success !!!!!'
+    on_failure:
+      - echo 'Failed job .... :('
+
+  - name: build-u16cloall
+    type: runSh
+    steps:
+      - IN: u16all-img
+      - IN: u16cloall-repo
+      - IN: docker-creds
+      - TASK:
+        - script: sudo apt-get install -y jq
+        - script: ./IN/u16cloall-repo/gitRepo/build.sh
+      - OUT: u16cloall-img
+    on_success:
+      - echo 'on success !!!!!'
+    on_failure:
+      - echo 'Failed job .... :('
+
+  - name: build-u16golall
+    type: runSh
+    steps:
+      - IN: u16all-img
+      - IN: u16golall-repo
+      - IN: docker-creds
+      - TASK:
+        - script: sudo apt-get install -y jq
+        - script: ./IN/u16golall-repo/gitRepo/build.sh
+      - OUT: u16golall-img
+    on_success:
+      - echo 'on success !!!!!'
+    on_failure:
+      - echo 'Failed job .... :('
+
+  - name: build-u16javall
+    type: runSh
+    steps:
+      - IN: u16all-img
+      - IN: u16javall-repo
+      - IN: docker-creds
+      - TASK:
+        - script: sudo apt-get install -y jq
+        - script: ./IN/u16javall-repo/gitRepo/build.sh
+      - OUT: u16javall-img
+    on_success:
+      - echo 'on success !!!!!'
+    on_failure:
+      - echo 'Failed job .... :('
+
+  - name: build-u16scaall
+    type: runSh
+    steps:
+      - IN: u16javall-img
+      - IN: u16scaall-repo
+      - IN: docker-creds
+      - TASK:
+        - script: sudo apt-get install -y jq
+        - script: ./IN/u16scaall-repo/gitRepo/build.sh
+      - OUT: u16scaall-img
+    on_success:
+      - echo 'on success !!!!!'
+    on_failure:
+      - echo 'Failed job .... :('
+
+  - name: build-u16ruball
+    type: runSh
+    steps:
+      - IN: u16all-img
+      - IN: u16ruball-repo
+      - IN: docker-creds
+      - TASK:
+        - script: sudo apt-get install -y jq
+        - script: ./IN/u16ruball-repo/gitRepo/build.sh
+      - OUT: u16ruball-img
+    on_success:
+      - echo 'on success !!!!!'
+    on_failure:
+      - echo 'Failed job .... :('
+
+  - name: build-u16phpall
+    type: runSh
+    steps:
+      - IN: u16all-img
+      - IN: u16phpall-repo
+      - IN: docker-creds
+      - TASK:
+        - script: sudo apt-get install -y jq
+        - script: ./IN/u16phpall-repo/gitRepo/build.sh
+      - OUT: u16phpall-img
+    on_success:
+      - echo 'on success !!!!!'
+    on_failure:
+      - echo 'Failed job .... :('
+
+  - name: build-u16cppall
+    type: runSh
+    steps:
+      - IN: u16all-img
+      - IN: u16cppall-repo
+      - IN: docker-creds
+      - TASK:
+        - script: sudo apt-get install -y jq
+        - script: ./IN/u16cppall-repo/gitRepo/build.sh
+      - OUT: u16cppall-img
+    on_success:
+      - echo 'on success !!!!!'
+    on_failure:
+      - echo 'Failed job .... :('

@@ -209,3 +209,146 @@ resources:
       sourceName: "drydock/u16all"
     seed:
       versionName: tip
+
+  - name: u16nodall-repo
+    type: gitRepo
+    integration: avinci-gh
+    pointer:
+      sourceName: dry-dock/u16nodall
+      branch: master
+      buildOnTagPush: true
+
+  - name: u16nodall-img
+    type: image
+    integration: avinci-dh
+    pointer:
+      sourceName: "drydock/u16nodall"
+    seed:
+      versionName: tip
+
+  - name: u16pytall-repo
+    type: gitRepo
+    integration: avinci-gh
+    pointer:
+      sourceName: dry-dock/u16pytall
+      branch: master
+      buildOnTagPush: true
+
+  - name: u16pytall-img
+    type: image
+    integration: avinci-dh
+    pointer:
+      sourceName: "drydock/u16pytall"
+    seed:
+      versionName: tip
+
+  - name: u16cloall-repo
+    type: gitRepo
+    integration: avinci-gh
+    pointer:
+      sourceName: dry-dock/u16cloall
+      branch: master
+      buildOnTagPush: true
+
+  - name: u16cloall-img
+    type: image
+    integration: avinci-dh
+    pointer:
+      sourceName: "drydock/u16cloall"
+    seed:
+      versionName: tip
+
+  - name: u16golall-repo
+    type: gitRepo
+    integration: avinci-gh
+    pointer:
+      sourceName: dry-dock/u16golall
+      branch: master
+      buildOnTagPush: true
+
+  - name: u16golall-img
+    type: image
+    integration: avinci-dh
+    pointer:
+      sourceName: "drydock/u16golall"
+    seed:
+      versionName: tip
+
+  - name: u16javall-repo
+    type: gitRepo
+    integration: avinci-gh
+    pointer:
+      sourceName: dry-dock/u16javall
+      branch: master
+      buildOnTagPush: true
+
+  - name: u16javall-img
+    type: image
+    integration: avinci-dh
+    pointer:
+      sourceName: "drydock/u16javall"
+    seed:
+      versionName: tip
+
+  - name: u16scaall-repo
+    type: gitRepo
+    integration: avinci-gh
+    pointer:
+      sourceName: dry-dock/u16scaall
+      branch: master
+      buildOnTagPush: true
+
+  - name: u16scaall-img
+    type: image
+    integration: avinci-dh
+    pointer:
+      sourceName: "drydock/u16scaall"
+    seed:
+      versionName: tip
+
+  - name: u16ruball-repo
+    type: gitRepo
+    integration: avinci-gh
+    pointer:
+      sourceName: dry-dock/u16ruball
+      branch: master
+      buildOnTagPush: true
+
+  - name: u16ruball-img
+    type: image
+    integration: avinci-dh
+    pointer:
+      sourceName: "drydock/u16ruball"
+    seed:
+      versionName: tip
+
+  - name: u16phpall-repo
+    type: gitRepo
+    integration: avinci-gh
+    pointer:
+      sourceName: dry-dock/u16phpall
+      branch: master
+      buildOnTagPush: true
+
+  - name: u16phpall-img
+    type: image
+    integration: avinci-dh
+    pointer:
+      sourceName: "drydock/u16phpall"
+    seed:
+      versionName: tip
+
+  - name: u16cppall-repo
+    type: gitRepo
+    integration: avinci-gh
+    pointer:
+      sourceName: dry-dock/u16cppall
+      branch: master
+
+  - name: u16cppall-img
+    type: image
+    integration: avinci-dh
+    pointer:
+      sourceName: "drydock/u16cppall"
+    seed:
+      versionName: tip
